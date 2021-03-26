@@ -1,0 +1,30 @@
+div {
+    color: blue;
+}
+
+nav {
+    display: flex;
+    align-content: space-between;
+}
+
+nav > div {
+    flex: 1;
+}
+
+.search {
+    text-align: right ;
+}
+
+.links {
+    text-align: center;
+    display: flex;
+    align-content: space-between;
+}
+
+.links p {
+    flex: 1;
+    margin-top: 0;
+    margin-bottom: 0%;
+}
+
+

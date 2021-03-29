@@ -1,0 +1,128 @@
+.main {
+    background-color: black;
+    color: red;
+}
+
+nav {
+    display: flex; 
+    align-content: space-between;
+    font-family: fantasy;
+    width: 100%;
+    background-color: rgb(3, 0, 7);
+    font-size: 25px;
+       
+}
+
+nav > div {
+    flex: 1;
+    color: white;   
+}
+
+.search {
+    text-align: right ;
+}
+
+.logo { 
+    text-align: left;
+}
+
+.links {
+    text-align: center;
+    display: flex;
+    align-content: space-between;
+}
+
+.links p {
+    flex: 1;
+    margin-top: 0;
+    margin-bottom: 0%;
+}
+
+.content-container {
+    display: flex;
+    font-family: fantasy;
+    align-content: space-between;
+    font-size: 20px;
+}
+
+.resize {
+    width: 725px;
+    height: 550px;
+    padding-top: 10px;
+
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.image1 {
+    width: 70px;
+    height: 70px;
+    padding-top: 5px;
+    align-items: baseline;
+}
+.image2 {
+    width: 70px;
+    height: 70px;
+    padding-top: 5px;
+}
+.image3 {
+    width: 70px;
+    height: 70px;
+    padding-top: 5px;
+}.image4 {
+    width: 70px;
+    height: 70px;
+    padding-top: 5px;
+}.image5 {
+    width: 70px;
+    height: 70px;
+    padding-top: 5px;
+}.image6 {
+    width: 70px;
+    height: 70px;
+    padding-top: 5px;
+}
+
+.productTitle {
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.product-information {
+    flex: 1;
+}
+
+.price {
+    margin-bottom: 25px;
+}
+.cart {
+    margin-bottom: 25px;
+}
+.bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    font-family: fantasy;
+    align-content: space-between;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.footerNav {
+    display: flex;
+}
+.EmailInput {
+    display: flex;
+}

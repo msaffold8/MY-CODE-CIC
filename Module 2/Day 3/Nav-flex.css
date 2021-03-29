@@ -1,18 +1,28 @@
 div {
     color: blue;
+    background-color: rgb(3, 0, 7);
 }
 
 nav {
     display: flex;
+ 
     align-content: space-between;
+    font-family: fantasy;
+    width: 100%;
+       
 }
 
 nav > div {
     flex: 1;
+    color: white;   
 }
 
 .search {
     text-align: right ;
+}
+
+.logo { 
+    text-align: left;
 }
 
 .links {

@@ -1,0 +1,110 @@
+nav {
+    background: black;
+    color: white;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    
+}
+#cicheading {
+    font-size: 40px;
+}
+
+.quickLinks {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.quickLinks > a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.active {
+    font-weight: 700;
+    border-bottom: 5px solid orange;
+    font-size: 30px;
+}
+
+.leftCol,
+.centerCol {
+    border-right: 1px solid rgb(236, 232, 232);
+    min-height: 100vh;
+    font-family:'Times New Roman', Times, serif;
+}
+.rightCol {
+    font-family:'Times New Roman', Times, serif;
+
+}
+#topNews {
+    border-top: 5px solid orange;
+    width: 60px;
+}
+
+.articles {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+    
+}
+#headlineImage {
+     width: 100%;
+    max-width: 615px;
+     border-radius: 5px;
+     margin-bottom: 15px;
+     border: 1px solid   black;
+    
+ }
+.imageContainer {
+    text-align: center;
+}
+.headlineStory {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#headlineStory {
+    text-decoration: none;
+    color: black;
+    
+}
+ .synopsis {
+     margin-bottom: 0;
+     font-family: 'Times New Roman', Times, serif;
+     margin-left: 20px;
+     margin-right: 20px;
+ }
+
+.author {
+    color: grey;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+}
+
+article{
+    border-bottom: 1px solid black;
+
+}
+#topStory {
+    text-decoration: none;
+    color: black;
+}
+.adLabel {
+    color: gray;
+}
+
+.adImage {
+    width: 90%;
+    max-height: 140px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid   black;
+    border-radius: 5px;
+    cursor: pointer;
+}

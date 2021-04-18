@@ -1,0 +1,44 @@
+body {
+    padding: 15px;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+nav > div {
+    flex: 1;
+}
+
+.links {
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.links a {
+    text-align: center;
+    align-content: space-between;
+
+}
+
+.search {
+    text-align: right;
+}
+#logoImage {
+    max-width: 50px;
+}
+#myImage {
+    max-width: 200px;
+    margin-top: 10px;
+}
+form > label {
+    display: block;
+}

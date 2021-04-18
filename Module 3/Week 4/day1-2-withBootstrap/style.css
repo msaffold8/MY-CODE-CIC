@@ -1,0 +1,74 @@
+/* Base */
+
+.mainContent {
+    padding: 40px;
+    
+}
+.thumbnailImg {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+/* Nav */
+
+.sneakerLogo {
+    width: 75px;
+    height: auto;
+    border-radius: 5px;
+
+}
+
+/* Search Bar */
+.searchBar {
+    padding: 10px;
+}
+.searchResults {
+    margin-bottom: 20px;
+}
+.searchFilters {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+
+/* PRODUCT SECTION */
+
+.actionRow {
+    margin-top: 20px;
+}
+
+.quantity {
+    width: 40%;
+}
+
+.cartBtn {
+    width: 50%;
+}
+.description {
+    margin-top: 20px;
+}
+
+/* CARDS */
+.card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    }
+    
+/* Footer */
+
+footer {
+    padding: 20px;
+    margin-bottom: 25px;
+    
+}
+
+.footerNav {
+    max-width: 80%;
+}
+
+.footerNav {
+    color: white;
+}
+.footerHeading1 {
+    color: white;
+}

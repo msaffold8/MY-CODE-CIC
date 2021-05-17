@@ -1,0 +1,41 @@
+
+body {
+    background: linear-gradient(#cac9c9, coral);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  	color: black;
+  	min-height: 100vh;
+    margin: auto;
+    padding-top: 30px;
+    max-width: 800px;
+    
+}
+h1 {
+     font-size: 30px;
+     justify-content: center;
+ }
+
+ .input-group {
+     justify-content: center;
+     border: none;
+ }
+ .title {
+     text-align: center;
+ }
+ form {
+     min-height: 30vh;
+     display: flex; 
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+
+ form input, 
+ form, button {
+     border: none;
+     padding: 10px;
+     font-size: 15px;
+ }
+ #toDoListHeader {
+     text-align: center;
+     text-decoration: underline;
+ }

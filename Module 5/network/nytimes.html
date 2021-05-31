@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>NY Times Book List</title>
+</head>
+
+<body>
+    <!-- search -->
+    <div class="container">
+        <div class="row height d-flex justify-content-center align-items-center">
+            <div class="col-md-8">
+                <div class="search"> <input type="text" class="form-control" placeholder="Search your favorite books"
+                        id="search"> <button onClick="search(id)" id="button" class="btn btn-success">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <div>
+        <h1 style="border-bottom: 3px solid black; font-weight: 700; color: black;">NY TIMES BEST SELLER LIST</h1>
+        <div id="status"></div>
+    </div>
+
+    <!-- script to run axios & bootstrap  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- // axios request w/api key API: AQejhawGQ71AJGNtvDNcO7OyOKESjAYX -- -->
+
+    <script>
+        let promise = axios.get('https://api.nytimes.com/svc/books/v3/lists/overview/2013-05-22.json?api-key=AQejhawGQ71AJGNtvDNcO7OyOKESjAYX')
+
+        // extract & render response data
+
+        promise.then(function (response) {
+            const bookList = response.data.results.lists;
+
+            // loop. Create elements to house data. Class to style
+
+            for (const element of bookList) {
+                const outer = document.createElement('div');
+                outer.className = "my-class";
+
+                const inner = document.createElement('div');
+                inner.className = "my-class1";
+
+                // Inner div components 
+
+                const h1 = document.createElement('h1');
+                h1.innerHTML = element.books[0].title;
+                h1.className = "headers col ";
+                h1.setAttribute('id', 'text');
+                inner.appendChild(h1);
+
+                const authors = document.createElement('p');
+                authors.innerHTML = "Author" + ": " + element.books[0].author;
+                authors.className = "my-class1";
+                authors.setAttribute('id', 'text');
+
+                inner.appendChild(authors);
+
+                const Genre = document.createElement('p');
+                Genre.innerHTML = "Genre" + ": " + element.list_name;
+                Genre.className = "my-class1";
+                Genre.setAttribute('id', 'text');
+                inner.appendChild(Genre);
+
+                const image = document.createElement('img');
+                image.src = element.books[0].book_image;
+                image.className = "img center";
+                inner.appendChild(image);
+
+                const buyNow = document.createElement('a');
+                buyNow.className = "BuyNow";
+                buyNow.href = element.books[0].amazon_product_url;
+                buyNow.innerHTML = "Buy Now";
+                inner.appendChild(buyNow);
+
+                //append elements to body
+
+                document.body.appendChild(inner);
+                document.body.appendChild(outer);
+            }
+            // document.getElementById('status').innerHTML += response.status;
+        })
+
+        //search list
+        function search(e) {
+            let searched = document.getElementById("search").value.trim();
+            if (searched !== "") {
+                let text = document.getElementById("text").innerHTML;
+                let re = new RegExp(searched, "g"); // search for all instances
+                let newText = text.replace(re, `<mark>${searched}</mark>`);
+                document.getElementById("text").innerHTML = newText;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

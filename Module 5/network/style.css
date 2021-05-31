@@ -1,0 +1,58 @@
+body {
+    background-color: white ;
+}
+.my-class1 {
+    justify-content: center;
+    text-align: center;
+    display: grid;   
+}
+h1 {
+    text-align: center;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: green;
+    margin-top: 20px; 
+}
+p {
+    margin: 0;
+}
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 10%;
+    margin: auto;
+    padding: 10px;
+}
+.BuyNow {
+    background-color: green;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10%;
+    margin-bottom: 10px;    
+    margin: auto;
+}
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+    margin: 25px;
+}
+
+.search input {
+    height: 60px;
+    text-indent: 25px;
+    border: 2px solid green;
+}
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
+    background: green
+}
+mark {
+    color: red;
+}

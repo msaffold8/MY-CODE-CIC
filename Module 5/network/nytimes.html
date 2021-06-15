@@ -58,13 +58,13 @@
                 // Inner div components 
 
                 const h1 = document.createElement('h1');
-                h1.innerHTML = element.books[0].title;
+                h1.innerHTML = element.books[1].title;
                 h1.className = "headers col ";
                 h1.setAttribute('id', 'text');
                 inner.appendChild(h1);
 
                 const authors = document.createElement('p');
-                authors.innerHTML = "Author" + ": " + element.books[0].author;
+                authors.innerHTML = "Author" + ": " + element.books[1].author;
                 authors.className = "my-class1";
                 authors.setAttribute('id', 'text');
 
@@ -77,13 +77,13 @@
                 inner.appendChild(Genre);
 
                 const image = document.createElement('img');
-                image.src = element.books[0].book_image;
+                image.src = element.books[1].book_image;
                 image.className = "img center";
                 inner.appendChild(image);
 
                 const buyNow = document.createElement('a');
                 buyNow.className = "BuyNow";
-                buyNow.href = element.books[0].amazon_product_url;
+                buyNow.href = element.books[1].amazon_product_url;
                 buyNow.innerHTML = "Buy Now";
                 inner.appendChild(buyNow);
 
@@ -93,6 +93,7 @@
                 document.body.appendChild(outer);
             }
             // document.getElementById('status').innerHTML += response.status;
+         
         })
 
         //search list
